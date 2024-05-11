@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Hud Frame</title>
+  </head>
+  <style>
+    /* styles.css */
+    body {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      background-color: #000; /* Set a dark background */
+    }
+
+    .hud-frame {
+      position: relative;
+      width: 300px; /* Adjust as needed */
+      height: 200px; /* Adjust as needed */
+      background-color: rgba(0, 0, 255, 0.5); /* Blue with 50% opacity */
+      clip-path: polygon(
+        10% 0%,
+        90% 0%,
+        100% 10%,
+        100% 90%,
+        90% 100%,
+        10% 100%,
+        0% 90%,
+        0% 10%
+      ); /* Irregular hexagonal shape */
+    }
+
+    /* Add crosshair markers (adjust positions as needed) */
+    .hud-frame::before,
+    .hud-frame::after {
+      content: "";
+      position: absolute;
+      width: 2px;
+      height: 100%;
+      background-color: #fff;
+    }
+
+    .hud-frame::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+
+    .hud-frame::after {
+      top: 50%;
+      transform: translateY(-50%);
+    }
+
+    /* Add grid background (use an appropriate image) */
+    .hud-frame {
+      background-image: url("hero-img.png");
+      background-size: cover;
+    }
+  </style>
+  <body>
+    <div class="hud-frame">
+      <!-- Content inside the HUD frame -->
+    </div>
+  </body>
+</html>

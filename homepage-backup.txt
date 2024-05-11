@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="homepage.css" />
+    <script src="homepage.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gapz - Graphics</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="logo-section">
+        <div class="logo-icon">
+          <img src="logo-svg-01-colored-01.svg" width="40px" />
+        </div>
+        <div class="text-logo">GAPZ GRAPHICS</div>
+      </div>
+      <div class="hamburger" onclick="toggleNav()">
+        <i class="bx bx-menu-alt-right"></i>
+      </div>
+      <nav class="nav-links">
+        <ul>
+          <li>
+            <a
+              data-tooltip="Home"
+              href="#home"
+              class="active-link"
+              id="home-link"
+              ><i class="bx bx-home"></i>
+              <p>Home</p></a
+            >
+          </li>
+          <li>
+            <a data-tooltip="About" href="#about" id="about-link"
+              ><i class="bx bx-info-circle"></i>
+              <p>About</p>
+            </a>
+          </li>
+          <li>
+            <a data-tooltip="Services" href="#services" id="services-link"
+              ><i class="bx bx-briefcase"></i>
+              <p>Services</p>
+            </a>
+          </li>
+          <li>
+            <a data-tooltip="Portfolio" href="#portfolio" id="portfolio-link"
+              ><i class="bx bx-photo-album"></i>
+              <p>Portfolio</p>
+            </a>
+          </li>
+          <li>
+            <a data-tooltip="Contact" href="#contact" id="contact-link"
+              ><i class="bx bx-envelope"></i>
+              <p>Contact</p>
+            </a>
+          </li>
+        </ul>
+        <footer>&copy;Copyright. Gapz Graphics 2024.</footer>
+      </nav>
+    </header>
+    <main class="main-content">
+      <section class="main-section active-tab-content" id="home">
+        <div class="home-container">
+          <div class="home-image-container"></div>
+          <div class="home-text-content-heading">Hi, Gapz Graphics here!</div>
+          <div class="home-text-content-subheading">
+            Freelance Graphic Artist for Hire
+          </div>
+          <div class="home-text-content-intro-text">
+            I am a self taught beginner Graphic Artist from Philippines, who
+            specializes high<br />
+            quality designs for your brand with the use of standard graphic
+            design tools such<br />
+            as Adobe Illustrator and Adobe Photoshop. Feel free to look at my
+            works and get in <br />
+            touch with me by sending a message.
+          </div>
+          <div class="home-content-buttons">
+            <button class="btn1">Portfolio</button>
+            <button class="btn2">
+              <div class="home-buttons-icon"></div>
+              <div class="home-buttons-label">Message</div>
+            </button>
+          </div>
+        </div>
+      </section>
+      <section class="main-section" id="about">
+        <div class="about-container">
+          <div class="about-image-section">
+            <div class="about-socials">
+              <div class="abt-soc-ion"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></div>
+              <div class="abt-soc-ion"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></div>
+              <div class="abt-soc-ion"><a href=""><ion-icon name="logo-behance"></ion-icon></a></div>
+
+            </div>
+          </div>
+
+          <div class="about-text-section">
+            <div class="about-heading">About Me</div>
+            <div class="about-subheading">
+              This website is manage by Jesie Gapol for freelance purposes and
+              to showcase a unique artstyle to the world. Most of my works are
+              inspired by a mechanical technology character.
+            </div>
+            <div class="about-tabs">
+              <div class="about-tab-titles">
+                <div class="tabtitle default-active-tab-title" onclick="openTab(event, 'Skills')">Skills</div>
+                <div class="tabtitle" onclick="openTab(event, 'Experience')">Experience</div>
+                <div class="tabtitle" onclick="openTab(event, 'Education')">Education</div>
+              </div>
+              <div class="about-tab-content">
+                <div id="skills-tab" class="skills-tab-content active-tab-content">
+                  <div class="skill-bar-all">
+                     <div class="tool-icon1"></div>
+                     <div class="skill-container-all">
+                           <div class="skill-bar-heading">Adobe Illustrator</div>
+                          <div class="skill-bar-container">
+                             <div class="skill1"></div>
+                             <div class="percentage percent1">65%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skill-bar-all">
+                    <div class="tool-icon2"></div>
+                    <div class="skill-container-all">
+                          <div class="skill-bar-heading">Adobe Photoshop</div>
+                         <div class="skill-bar-container">
+                            <div class="skill2"></div>
+                            <div class="percentage percent2">40%</div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <div class="skill-bar-all">
+                  <div class="tool-icon3"></div>
+                  <div class="skill-container-all">
+                        <div class="skill-bar-heading">Figma</div>
+                       <div class="skill-bar-container">
+                          <div class="skill3"></div>
+                          <div class="percentage percent3">56%</div>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="skill-bar-all">
+                <div class="tool-icon4"></div>
+                <div class="skill-container-all">
+                      <div class="skill-bar-heading">Indesign</div>
+                     <div class="skill-bar-container">
+                        <div class="skill4"></div>
+                        <div class="percentage percent4">75%</div>
+                 </div>
+               </div>
+             </div>
+                 
+                 
+                </div>
+                <div id="experience-tab" class="experience-tab-content">Experience content</div>
+                <div id="education-tab" class="education-tab-content">
+                  
+                  <div class="school-logo-container">
+                    <div class="logo-img"><div class="logo-hover"></div></div>
+                    
+                    <div class="schl-heading">Junior HS | Cogon NHS</div>
+                    <div class="schl-subheading">2017-2020</div>
+                  </div>
+
+                  <div class="school-logo-container">
+                    <div class="logo-img"><div class="logo-hover"></div></div>
+                    <div class="schl-heading ">Senior High | Cogon NHS</div>
+                    <div class="schl-subheading">2020-2022</div>
+                  </div>
+
+                  <div class="school-logo-container">
+                    <div class="jrmsu-logo-container"><div class="logo-hover"></div></div>
+                    
+                    <div class="schl-heading">College | JRMSU-K</div>
+                    <div class="schl-subheading">Current</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section" id="services">
+        <div class="services-container">
+          <div class="services-heading">Services I Offer</div>
+          <div class="services-content-container">
+            <div class="card-container">
+              <div class="card card1">
+                <div class="card-icon">
+                  <div class="icon-circ">
+                    <ion-icon name="create-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="card-heading">Logo Design</div>
+                <div class="card-text">
+                  At Gapz Graphics, I understand that a logo is the face of your
+              brand. I work tirelessly to create unique and memorable logos that
+              reflect your brand's identity and make a lasting impression.
+                </div>
+              </div>
+              <div class="card card2">
+                <div class="card-icon">
+                  <div class="icon-circ">
+                    <ion-icon name="brush-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="card-heading">Digital Art</div>
+                <div class="card-text">
+                  My digital art service is all about bringing your ideas to life.
+                  With a blend of creativity and modern digital tools, I create
+                  stunning visuals that tell a story, evoke emotions, and resonate
+                  with your audience.
+                </div>
+              </div>
+              <div class="card card3">
+                <div class="card-icon">
+                  <div class="icon-circ">
+                    <ion-icon name="grid-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="card-heading">Layout Design</div>
+                <div class="card-text">
+                  Good design is all about the details. My layout design service
+              focuses on creating visually appealing and easy-to-navigate
+              layouts for your print and digital needs.
+                </div>
+              </div>
+              <div class="card card4">
+                <div class="card-icon">
+                  <div class="icon-circ">
+                    <ion-icon name="text-outline"></ion-icon>
+                  </div>
+                </div>
+                <div class="card-heading">Typography</div>
+                <div class="card-text">
+                  Typography is an art that can make or break a design. I offer
+              typography services that enhance your message and align with your
+              brand style.
+                </div>
+              </div>
+            </div>
+
+           
+          </div>
+
+        </div>
+      </section>
+      <section class="main-section" id="portfolio">
+        <div class="portfolio-container">Portfolio-Content</div>
+      </section>
+      <section class="main-section" id="contact">
+        <div class="contact-container">Contact-Content</div>
+      </section>
+    </main>
+    <script>function openTab(event, tabName) {
+      var i, tabcontent, tabtitle;
+    
+      // Hide all tab contents and remove the 'default-active-tab-title' class from all tab titles
+      tabcontent = document.getElementsByClassName("about-tab-content")[0].children;
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active-tab-content");
+      }
+    
+      // Remove the 'default-active-tab-title' class from all tab titles
+      tabtitle = document.getElementsByClassName("tabtitle");
+      for (i = 0; i < tabtitle.length; i++) {
+        tabtitle[i].classList.remove("default-active-tab-title");
+      }
+    
+      // Show the clicked tab content and add the 'default-active-tab-title' class to the clicked tab title
+      document.getElementById(tabName.toLowerCase() + "-tab").classList.add("active-tab-content");
+      event.currentTarget.classList.add("default-active-tab-title");
+    }
+    </script>
+<script>// Function to animate skill bars and count percentages
+  function animateSkillBars() {
+    var skillBars = document.querySelectorAll('.skill-bar-container');
+    skillBars.forEach(function(skillBar) {
+      var skill = skillBar.querySelector('.skill');
+      var percentageText = skillBar.querySelector('.percentage');
+      var targetPercentage = parseInt(percentageText.textContent);
+      var counter = 0;
+      var step = 1;
+  
+      var timer = setInterval(function() {
+        if (counter < targetPercentage) {
+          counter += step;
+          percentageText.textContent = counter + '%';
+          skill.style.width = counter + '%';
+        } else {
+          clearInterval(timer);
+        }
+      }, 20); // Adjust the interval for smoother animation
+    });
+  }
+  
+  // Function to load skills when the Skills tab is clicked
+  function loadSkills() {
+    // Your logic to open the Skills tab
+    animateSkillBars();
+  }
+  
+  // Call animateSkillBars() when the page loads
+  window.addEventListener('load', animateSkillBars);
+  
+  // Call loadSkills() when the Skills tab is clicked
+  document.querySelector('.default-active-tab-title').addEventListener('click', loadSkills);
+
+  // Function to load skills when the About link is clicked
+function loadSkillsOnAboutClick() {
+  // Check if the About tab is clicked
+  document.getElementById('about-link').addEventListener('click', function() {
+    // Load the skills
+    animateSkillBars();
+  });
+}
+
+function loadSkillsOnAboutClick() {
+    document.getElementById('about-link').addEventListener('click', function() {
+      // Load the skills
+      animateSkillBars();
+    });
+  }
+
+ 
+  </script>
+  
+  </body>
+</html>
