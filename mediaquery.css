@@ -35,13 +35,11 @@
   }
 
   .home-text-content-heading {
-    font-size: 42px;
     font-weight: 600;
     width: 100%;
   }
 
   .home-text-content-subheading {
-    font-size: 24px;
     width: 100%;
     color: #3593ff;
   }
@@ -1044,7 +1042,7 @@
   }
 
   .portfolio-card-text-heading {
-    font-size: 24px !important;
+    font-size: 18   px !important;
   }
   .portfolio-card-text-sub {
     font-size: 14px !important;
