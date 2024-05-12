@@ -1,0 +1,481 @@
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <script
+        type="module"
+        src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+      ></script>
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      />
+      <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+      <link
+        href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+        rel="stylesheet"
+      />
+    
+        <link rel="icon" type="image/x-icon" href="logo-svg-01-colored-01-blue final-01.svg">
+
+    
+      <link rel="stylesheet" href="homepage.css" />
+      <link rel="stylesheet" href="mediaquery.css">
+      <script src="homepage.js"></script>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Gapz Graphics | Freelance Graphic Artist</title>
+    </head>
+    <body>
+      <header class="main-header">
+        <div class="logo-section">
+          <div class="logo-icon">
+            <img src="logo-svg-01-colored-01-blue final-01.svg" width="40px" />
+          </div>
+          <div class="text-logo">GAPZ GRAPHICS</div>
+        </div>
+        <div class="hamburger" onclick="toggleNav()">
+          <i class="bx bx-menu-alt-right"></i>
+        </div>
+        <nav class="nav-links">
+          <ul>
+            <li>
+              <a
+                data-tooltip="Home"
+                href="#home"
+                class="active-link"
+                id="home-link"
+                ><i class="bx bx-home"></i>
+                <p>Home</p></a
+              >
+            </li>
+            <li>
+              <a data-tooltip="About" href="#about" id="about-link"
+                ><i class="bx bx-info-circle"></i>
+                <p>About</p>
+              </a>
+            </li>
+            <li>
+              <a data-tooltip="Services" href="#services" id="services-link"
+                ><i class="bx bx-briefcase"></i>
+                <p>Services</p>
+              </a>
+            </li>
+            <li>
+              <a data-tooltip="Portfolio" href="#portfolio" id="portfolio-link"
+                ><i class="bx bx-photo-album"></i>
+                <p>Portfolio</p>
+              </a>
+            </li>
+            <li>
+              <a data-tooltip="Contact" href="#contact" id="contact-link"
+                ><i class="bx bx-envelope"></i>
+                <p>Contact</p>
+              </a>
+            </li>
+          </ul>
+          <footer>&copy;Copyright. Gapz Graphics 2024.</footer>
+        </nav>
+      </header>
+      <main class="main-content">
+        <section class="main-section active-tab-content" id="home">
+          <div class="home-container">
+            <div class="home-image-container">
+              <img class="h-img1" src="Project 1 1 1 1 11.png" alt="">
+              <img class="h-img2" src="Project 116_2.png" alt="">
+              <img class="h-img3" src="CSS SPORTS FEST TSHIRT DESGN-01.png" alt="">
+              <img class="h-img4" src="hero-img.png" alt="">
+
+
+            </div>
+            <div class="home-text-container">
+              <div class="home-text-content-heading">Hi, Gapz Graphics here!</div>
+              <div class="home-text-content-subheading">
+                Freelance Graphic Artist for Hire
+              </div>
+              <div class="home-text-content-intro-text">
+                I am a self taught beginner Graphic Artist from Philippines, who
+                specializes high
+                quality designs for your brand with the use of standard graphic
+                design tools such
+                as Adobe Illustrator and Adobe Photoshop. Get in touch with me by sending a message.
+              </div>
+              <div class="home-content-buttons">
+                <button class="btn2" href="#contact">
+                  <div class="home-buttons-icon"></div>
+                  <div class="home-buttons-label">Contact Me</div>
+                </button>
+              </div>
+            </div>
+
+
+
+
+
+          </div>
+        </section>
+        <section class="main-section" id="about">
+          <div class="about-container">
+            <div class="about-image-section">
+              <div class="about-socials">
+                <div class="abt-soc-ion"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></div>
+                <div class="abt-soc-ion"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></div>
+                <div class="abt-soc-ion"><a href=""><ion-icon name="logo-behance"></ion-icon></a></div>
+
+              </div>
+            </div>
+
+            <div class="about-text-section">
+              <div class="about-heading">About Me</div>
+              <div class="about-subheading">
+                This website is manage by Jesie Gapol for freelance purposes and
+                to showcase a unique artstyle to the world. Most of my works are
+              inspired by a mechanical technology character.
+            </div>
+            <div class="about-tabs">
+              <div class="about-tab-titles">
+                <div class="tabtitle default-active-tab-title" onclick="openTab(event, 'Skills')">Skills</div>
+                <div class="tabtitle" onclick="openTab(event, 'Experience')">Experience</div>
+                <div class="tabtitle" onclick="openTab(event, 'Education')">Education</div>
+              </div>
+              <div class="about-tab-content">
+                <div id="skills-tab" class="skills-tab-content active-tab-content">
+                  <div class="skill-bar-all">
+                     <div class="tool-icon1"></div>
+                     <div class="skill-container-all">
+                           <div class="skill-bar-heading">Adobe Illustrator</div>
+                          <div class="skill-bar-container">
+                             <div class="skill1"></div>
+                             <div class="percentage percent1">65%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="skill-bar-all">
+                    <div class="tool-icon2"></div>
+                    <div class="skill-container-all">
+                          <div class="skill-bar-heading">Adobe Photoshop</div>
+                         <div class="skill-bar-container">
+                            <div class="skill2"></div>
+                            <div class="percentage percent2">40%</div>
+                     </div>
+                   </div>
+                 </div>
+
+                 <div class="skill-bar-all">
+                  <div class="tool-icon3"></div>
+                  <div class="skill-container-all">
+                        <div class="skill-bar-heading">Figma</div>
+                       <div class="skill-bar-container">
+                          <div class="skill3"></div>
+                          <div class="percentage percent3">56%</div>
+                   </div>
+                 </div>
+               </div>
+
+               <div class="skill-bar-all">
+                <div class="tool-icon4"></div>
+                <div class="skill-container-all">
+                      <div class="skill-bar-heading">Indesign</div>
+                     <div class="skill-bar-container">
+                        <div class="skill4"></div>
+                        <div class="percentage percent4">75%</div>
+                 </div>
+               </div>
+             </div>
+                 
+                 
+                </div>
+                <div id="experience-tab" class="experience-tab-content">Experience content</div>
+                <div id="education-tab" class="education-tab-content">
+                  
+                  <div class="school-logo-container">
+                    <div class="logo-img"><div class="logo-hover"></div></div>
+                    
+                    <div class="schl-heading">Junior HS | Cogon NHS</div>
+                    <div class="schl-subheading">2017-2020</div>
+                  </div>
+
+                  <div class="school-logo-container">
+                    <div class="logo-img"><div class="logo-hover"></div></div>
+                    <div class="schl-heading ">Senior High | Cogon NHS</div>
+                    <div class="schl-subheading">2020-2022</div>
+                  </div>
+
+                  <div class="school-logo-container">
+                    <div class="jrmsu-logo-container"><div class="logo-hover"></div></div>
+                    
+                    <div class="schl-heading">College | JRMSU-K</div>
+                    <div class="schl-subheading">2024 | Current</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-section" id="services">
+        <div class="services-container">
+          <div class="services-heading">Services I Offer</div>
+          <div class="services-content">
+            <div class="services-card-container">
+              <div class="services-cards">
+               <div class="services-card-up">
+                <div class="services-icon-container"><ion-icon name="color-palette-outline"></ion-icon></div>
+                <div class="services-card-heading">Logo Design</div>
+               </div>
+               <div class="services-card-down">At Gapz Graphics, I understand that a logo is the face of your
+                brand. I work tirelessly to create unique and memorable logos that
+                reflect your brand's identity and make a lasting impression.</div>
+              </div>
+              <div class="services-cards">
+                <div class="services-card-up">
+                 <div class="services-icon-container"><ion-icon name="brush-outline"></ion-icon></div>
+                 <div class="services-card-heading">Digital Art</div>
+                </div>
+                <div class="services-card-down">My digital art service is all about bringing your ideas to life.
+                  With a blend of creativity and modern digital tools, I create
+                  stunning visuals that tell a story, evoke emotions, and resonate
+                  with your audience.</div>
+               </div>
+               <div class="services-cards">
+                <div class="services-card-up">
+                 <div class="services-icon-container"><ion-icon name="grid-outline"></ion-icon></div>
+                 <div class="services-card-heading">Layout Design</div>
+                </div>
+                <div class="services-card-down">Good design is all about the details. My layout design service
+                  focuses on creating visually appealing and easy-to-navigate
+                  layouts for your print and digital needs.</div>
+               </div>
+               <div class="services-cards">
+                <div class="services-card-up">
+                 <div class="services-icon-container"><ion-icon name="text-outline"></ion-icon></div>
+                 <div class="services-card-heading">Typography</div>
+                </div>
+                <div class="services-card-down">Typography is an art that can make or break a design. I offer
+                  typography services that enhance your message and align with your
+                  brand style.</div>
+               </div>
+            </div>
+          </div>
+          
+
+           
+          </div>
+
+        </div>
+      </section>
+      <section class="main-section" id="portfolio">
+        <div class="portfolio-container">
+          <div class="portfolio-heading">Works I've done</div>
+          <div class="portfolio-content">
+            <div class="portfolio-card-container">
+              <div class="portfolio-row first-row">
+                <div class="portfolio-cards">
+                  <div class="portfolio-image-container art1">
+                    <label class="container">
+                      <input checked="checked" type="checkbox">
+                        <svg viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="expand"><path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"></path></svg>
+                        <svg viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="compress"><path d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V64zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32H96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V64zM320 320c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V384h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320z"></path></svg>
+                    </label>
+                  <img src="CSS SPORTS FEST TSHIRT DESGN-01.png" alt="">
+                  </div>
+                  <div class="portfolio-card-text">
+                    <div class="portfolio-card-text-heading">Jersey Design</div>
+                    <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
+                  </div>
+                </div>
+                <div class="portfolio-cards">
+                  <div class="portfolio-image-container art2">
+                    
+                    <img src="bg-gapol.jpg" alt="">
+                  </div>
+                  <div class="portfolio-card-text">
+                    <div class="portfolio-card-text-heading">Illustration Design</div>
+                    <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
+                  
+                  </div>
+                </div>
+                <div class="portfolio-cards">
+                  <div class="portfolio-image-container art3">
+                    <img src="HAYA GAMING LOGO UNFINISHED TEXT 2-01.jpg" alt="">
+                  </div>
+                  <div class="portfolio-card-text">
+                    <div class="portfolio-card-text-heading">Mascot Logo Design</div>
+                    <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
+                  
+                  </div>
+                </div>
+                <div class="portfolio-cards">
+                  <div class="portfolio-image-container art4">
+                    <img src="MOVING UP CEREMONY FINAL SUPer 20000 5555-01.png" alt="">
+                  </div>
+                  <div class="portfolio-card-text">
+                    <div class="portfolio-card-text-heading">A4-sized Layout Design</div>
+                    <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
+                  
+                  </div>
+                </div>
+              </div>
+              <div class="portfolio-row sec-row">
+                <div class="portfolio-cards">
+                  <div class="portfolio-image-container art5">
+                    <img src="Project 116_2.png" alt="">
+                  </div>
+                  <div class="portfolio-card-text">
+                    <div class="portfolio-card-text-heading">Hero Tunguia Vector</div>
+                    <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
+                  
+                  </div>
+                </div>
+                <div class="portfolio-cards"><div class="portfolio-image-container art6">
+                  <img src="CCS PANTHER MASCOT LOGO EDITABLE FINAL-01.png" alt="">
+                </div>
+                <div class="portfolio-card-text">
+                  <div class="portfolio-card-text-heading">Panther Mascot Logo</div>
+                  <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
+                
+                </div></div>
+                <div class="portfolio-cards">
+                  <div class="portfolio-image-container art7">
+                    <img src="Project 1 2 1 1 39_3.png" alt="">
+                  </div>
+                  <div class="portfolio-card-text">
+                    <div class="portfolio-card-text-heading">Mecha Illustration</div>
+                    <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
+                  
+                  </div>
+                </div>
+                <div class="portfolio-cards">
+                  <div class="portfolio-image-container art8">
+                    <img src="BARCELONIA BNW.png" alt="">
+                  </div>
+                  <div class="portfolio-card-text">
+                    <div class="portfolio-card-text-heading">Basketball Jersey Design</div>
+                    <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
+                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+            
+
+
+
+
+
+        </div>
+      </section>
+      <section class="main-section" id="contact">
+        <div class="contact-container">
+
+          <div class="contact-heading"><ion-icon name="call"></ion-icon>Contact Me</div>
+          <div class="contact-content">
+            <footer>&copy;Copyright, Gapz Graphcs 2024. All Rights Reserved.</footer>
+            <div class="contact-content-left">
+              <a href=""><div class="h3"><ion-icon name="logo-facebook"></ion-icon>Gapz Graphics</div></a>
+              <a href=""><div class="h3"><ion-icon name="logo-instagram"></ion-icon>Gapz Graphics</div></a>
+              <a href=""><div class="h3"><ion-icon name="logo-behance"></ion-icon>Gapz Graphics</div></a>
+              <a href=""><div class="h3"><ion-icon name="mail-open-outline"></ion-icon>Gapz Graphics</div></a>
+            </div>
+            <div class="contact-content-divider"></div>
+            <div class="contact-content-right">
+              <form id="contact-form" action="#" method="post">
+                  <label for="email">Your Email:</label>
+                  <input type="email" id="email" name="email" required>
+                  
+                  <label for="message">Message:</label>
+                  <textarea id="message" name="message" rows="5" required></textarea>
+                  
+                  <button type="submit">Submit</button>
+              </form>
+          </div>
+          
+
+          </div>
+            
+
+        </div>
+      </section>
+    </main>
+    <script>function openTab(event, tabName) {
+      var i, tabcontent, tabtitle;
+    
+      // Hide all tab contents and remove the 'default-active-tab-title' class from all tab titles
+      tabcontent = document.getElementsByClassName("about-tab-content")[0].children;
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].classList.remove("active-tab-content");
+      }
+    
+      // Remove the 'default-active-tab-title' class from all tab titles
+      tabtitle = document.getElementsByClassName("tabtitle");
+      for (i = 0; i < tabtitle.length; i++) {
+        tabtitle[i].classList.remove("default-active-tab-title");
+      }
+    
+      // Show the clicked tab content and add the 'default-active-tab-title' class to the clicked tab title
+      document.getElementById(tabName.toLowerCase() + "-tab").classList.add("active-tab-content");
+      event.currentTarget.classList.add("default-active-tab-title");
+    }
+    </script>
+<script>// Function to animate skill bars and count percentages
+  function animateSkillBars() {
+    var skillBars = document.querySelectorAll('.skill-bar-container');
+    skillBars.forEach(function(skillBar) {
+      var skill = skillBar.querySelector('.skill');
+      var percentageText = skillBar.querySelector('.percentage');
+      var targetPercentage = parseInt(percentageText.textContent);
+      var counter = 0;
+      var step = 1;
+  
+      var timer = setInterval(function() {
+        if (counter < targetPercentage) {
+          counter += step;
+          percentageText.textContent = counter + '%';
+          skill.style.width = counter + '%';
+        } else {
+          clearInterval(timer);
+        }
+      }, 20); // Adjust the interval for smoother animation
+    });
+  }
+  
+  // Function to load skills when the Skills tab is clicked
+  function loadSkills() {
+    // Your logic to open the Skills tab
+    animateSkillBars();
+  }
+  
+  // Call animateSkillBars() when the page loads
+  window.addEventListener('load', animateSkillBars);
+  
+  // Call loadSkills() when the Skills tab is clicked
+  document.querySelector('.default-active-tab-title').addEventListener('click', loadSkills);
+
+  // Function to load skills when the About link is clicked
+function loadSkillsOnAboutClick() {
+  // Check if the About tab is clicked
+  document.getElementById('about-link').addEventListener('click', function() {
+    // Load the skills
+    animateSkillBars();
+  });
+}
+
+function loadSkillsOnAboutClick() {
+    document.getElementById('about-link').addEventListener('click', function() {
+      // Load the skills
+      animateSkillBars();
+    });
+  }
+
+ 
+  </script>
+  
+  </body>
+</html>
