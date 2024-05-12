@@ -340,6 +340,26 @@
   .about-subheading {
     font-size: 12px;
   }
+
+  .logo-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .text-logo {
+    width: 100px;
+    height: 100%;
+    margin-left: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #3593ff;
+  }
 }
 
 /* Media Queries 580px */
@@ -356,7 +376,7 @@
   }
 
   .text-logo {
-    width: 200px;
+    width: 100%;
     height: 100%;
     margin-left: 5px;
     font-size: 20px;
@@ -373,12 +393,13 @@
     background-size: cover;
     background-position: center;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     align-items: center;
+    padding-bottom: 5%;
   }
 
   .home-container {
@@ -416,7 +437,7 @@
     align-items: start;
     text-align: start;
     padding-top: 5%;
-
+    padding-bottom: 5%;
     margin-top: 30px;
     padding-right: 0;
   }
@@ -449,7 +470,7 @@
 
   .home-text-content-intro-text {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 12px;
     color: #b3b3b3;
     width: 100% !important;
   }
@@ -457,7 +478,7 @@
   .home-content-buttons {
     margin-top: 4vh;
     width: 100%;
-    height: 5vh;
+    height: fit-content;
   }
 
   .home-buttons-label {
@@ -513,7 +534,7 @@
     padding: 40px;
     background-color: #121212;
     width: 100%;
-    height: 110vh;
+    height: 100%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -524,7 +545,7 @@
     width: 100%;
     height: max-content;
     padding-bottom: 10px;
-    font-size: 16px;
+    font-size: 12px;
   }
 
   .about-container {
@@ -539,17 +560,18 @@
     align-items: center;
     justify-content: space-between;
     padding: 0;
+    padding-bottom: 5%;
   }
 
   /*about tabs*/
 
   .about-tabs {
-    height: 29vh;
+    height: fit-content;
     width: 100%;
   }
 
   .about-tab-titles {
-    font-size: 14px;
+    font-size: 12px;
     height: 15%;
     display: flex;
     flex-direction: row;
@@ -676,7 +698,7 @@
   .skill-bar-container {
     background-color: #383838;
     border-radius: 5px;
-    height: 6px;
+    height: 4px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -865,7 +887,7 @@
     padding-top: 65px;
 
     width: 100%;
-    height: max-content;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -874,7 +896,7 @@
 
   .services-container {
     height: 100%;
-    width: 100%;
+    width: fit-content;
 
     border-radius: 12px;
     color: #b3b3b3;
@@ -896,9 +918,9 @@
 
   .services-content {
     width: 100%;
-    height: 170vh;
+    height: fit-content;
 
-    padding: 0;
+    padding: 5%;
     padding-top: 5vh;
     display: flex;
     align-items: center;
@@ -925,13 +947,13 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 36px;
+    font-size: 26px;
     font-weight: 600;
     color: #3593ff;
   }
 
   .services-card-down {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 
   .services-icon-container {
@@ -944,14 +966,18 @@
     border-bottom-right-radius: 50px;
   }
 
+  .services-icon-container ion-icon {
+    font-size: 48px;
+  }
+
   /*portfolio*/
 
   #portfolio {
     padding: 40px;
     padding-top: 80px;
-
+    padding-bottom: 5%;
     width: 100%;
-    height: 270vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1045,7 +1071,7 @@
     font-size: 18px !important;
   }
   .portfolio-card-text-sub {
-    font-size: 14px !important;
+    font-size: 12px !important;
   }
 
   /*portfolio end*/
@@ -1056,7 +1082,7 @@
     padding: 40px 40px 0px 40px;
 
     width: 100%;
-    height: 90vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -1064,7 +1090,7 @@
   }
 
   .contact-container {
-    height: 100%;
+    height: fit-content;
     width: 100%;
 
     border-radius: 10px;
@@ -1090,13 +1116,13 @@
 
   .contact-heading ion-icon {
     color: #3593ff;
-    font-size: 26px;
+    font-size: 24px;
     margin-right: 10px;
   }
 
   .contact-content {
     width: 100%;
-    height: 60vh;
+    height: fit-content;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: #444444;
@@ -1133,6 +1159,7 @@
   .contact-content-right label {
     color: #fff;
     margin-bottom: 5px;
+    font-size: 13px;
   }
 
   .contact-content-right input[type="email"],
@@ -1155,7 +1182,7 @@
     margin-top: 10px;
     width: 100%;
     padding: 10px;
-    font-size: 16px;
+    font-size: 13px;
     border: none;
     border-radius: 5px;
     background-color: #4caf50;
