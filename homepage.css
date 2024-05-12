@@ -271,7 +271,7 @@ a[data-tooltip]:hover::after {
 }
 
 .home-text-content-heading {
-  font-size: 46px;
+  font-size: 46px !important;
   font-weight: 600;
   width: 100%;
 }
