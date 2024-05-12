@@ -24,7 +24,7 @@ body {
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  height: 10vh;
+  height: fit-content;
   padding: 10px 4%;
   position: fixed;
   backdrop-filter: blur(7px);
@@ -355,7 +355,7 @@ a[data-tooltip]:hover::after {
 .about-image-section {
   height: 100%;
   width: 40%;
-  background: url("Untitled_1.jpg") no-repeat;
+  background: url("abt-hero.jpg") no-repeat;
   background-position: center;
   background-size: cover;
   border-radius: 12px;
@@ -417,7 +417,7 @@ a[data-tooltip]:hover::after {
 }
 
 .about-heading {
-  font-size: 62px;
+  font-size: 58px;
   font-weight: 600;
   width: 100%;
   color: #3593ff;
@@ -776,7 +776,7 @@ a[data-tooltip]:hover::after {
   display: flex;
   align-items: center;
   padding-top: 20px;
-  font-size: 62px;
+  font-size: 58px;
   font-weight: 600;
   justify-content: center;
   color: #3593ff;
@@ -835,7 +835,7 @@ a[data-tooltip]:hover::after {
 }
 
 .services-icon-container ion-icon {
-  font-size: 60px;
+  font-size: 56px;
   color: #3593ff;
 }
 
@@ -870,7 +870,7 @@ a[data-tooltip]:hover::after {
   padding-top: 80px;
   background-color: #121212;
   width: 100%;
-  height: max-content;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -895,7 +895,7 @@ a[data-tooltip]:hover::after {
   display: flex;
   align-items: center;
   padding-top: 20px;
-  font-size: 62px;
+  font-size: 58px;
   font-weight: 600;
   justify-content: center;
   color: #3593ff;
@@ -1054,6 +1054,7 @@ a[data-tooltip]:hover::after {
   display: flex;
   align-items: center;
   justify-content: start;
+  padding-top: 10px;
   padding-left: 10px;
 }
 .portfolio-card-text-sub {
@@ -1095,7 +1096,7 @@ a[data-tooltip]:hover::after {
   display: flex;
   align-items: center;
   padding-top: 20px;
-  font-size: 62px;
+  font-size: 58px;
   font-weight: 600;
   justify-content: center;
   color: #3593ff;
@@ -1156,6 +1157,7 @@ a[data-tooltip]:hover::after {
 .contact-content-right label {
   color: #fff;
   margin-bottom: 5px;
+  font-size: 13px;
 }
 
 .contact-content-right input[type="email"],
@@ -1178,7 +1180,7 @@ a[data-tooltip]:hover::after {
   margin-top: 10px;
   width: 100%;
   padding: 10px;
-  font-size: 16px;
+  font-size: 13px;
   border: none;
   border-radius: 5px;
   background-color: #4caf50;
@@ -1193,7 +1195,7 @@ a[data-tooltip]:hover::after {
 
 footer {
   margin-top: 10px;
-  font-size: 14px;
+  font-size: 12px;
   color: rgb(161, 161, 161);
   width: 100%;
   height: 20%;
@@ -1203,11 +1205,12 @@ footer {
 }
 
 .contact-content-left .h3 {
-  font-size: 18px;
+  font-size: 13px;
   color: #cacaca;
   display: flex;
   align-items: center;
   justify-content: center;
+  padding-top: 5%;
 }
 
 .contact-content-left a {
@@ -1224,7 +1227,7 @@ footer {
 
 .contact-content-left ion-icon {
   color: #3593ff;
-  font-size: 32px;
+  font-size: 28px;
   margin-right: 10px;
   transition: 0.5s;
 }
