@@ -1389,7 +1389,15 @@
   /*Home Content End*/
 
   .section-heading {
-    font-size: 22px !important;
+    font-size: 26px !important;
+  }
+
+  .services-card-heading {
+    font-size: 18px;
+  }
+
+  footer {
+    font-size: 7px;
   }
 }
 
