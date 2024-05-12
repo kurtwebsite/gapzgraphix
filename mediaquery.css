@@ -1272,14 +1272,15 @@
 
   .home-image-container {
     width: 100% !important;
-    height: max-content !important;
+    height: 40vh !important;
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
 
-    gap: 15px;
+    gap: 10px;
   }
 
   .home-text-container {
@@ -1297,8 +1298,8 @@
   }
 
   .home-image-container img {
-    width: 150px !important;
-    height: 150px !important;
+    width: 48.5% !important;
+    height: 48% !important;
 
     object-fit: cover;
     object-position: center;
