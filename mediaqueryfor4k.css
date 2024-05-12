@@ -1,0 +1,1114 @@
+@media screen and (min-width: 1441px) {
+  /*homepage*/
+  #home {
+    background: url("bg-gapol-transpa-bnw.png") no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .home-container {
+    max-height: 100%;
+    width: 100%;
+    color: #b3b3b3;
+    display: flex;
+    flex-direction: row;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 5%;
+    background: #000000d8;
+  }
+
+  .home-image-container {
+    width: 35%;
+    height: 67%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+    gap: 15px;
+  }
+
+  .home-image-container img {
+    width: 48%;
+    height: 48%;
+    object-fit: cover;
+    object-position: center;
+    transition: 0.6s;
+    cursor: pointer;
+  }
+
+  .h-img1 {
+    border-top-left-radius: 16px;
+  }
+
+  .h-img4 {
+    border-bottom-right-radius: 16px;
+  }
+
+  .home-image-container img:hover {
+    transform: scale(1.05);
+  }
+
+  .home-text-container {
+    width: 65%;
+    height: 67%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    text-align: start;
+    padding-right: 8%;
+  }
+
+  .home-text-content-heading {
+    font-size: 48px;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .wave {
+    animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s; /* Change to speed up or slow down */
+    animation-iteration-count: infinite; /* Never stop waving :) */
+    transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+
+  @keyframes wave-animation {
+    0% {
+      transform: rotate(0deg);
+    }
+    10% {
+      transform: rotate(14deg);
+    } /* The following five values can be played with to make the waving more or less extreme */
+    20% {
+      transform: rotate(-8deg);
+    }
+    30% {
+      transform: rotate(14deg);
+    }
+    40% {
+      transform: rotate(-4deg);
+    }
+    50% {
+      transform: rotate(10deg);
+    }
+    60% {
+      transform: rotate(0deg);
+    } /* Reset for the last half to pause */
+    100% {
+      transform: rotate(0deg);
+    }
+  }
+
+  .home-text-content-subheading {
+    font-size: 22px;
+    width: 100%;
+    color: #3593ff;
+  }
+
+  .home-text-content-heading span {
+    color: #e0e0e0;
+  }
+
+  .home-text-content-intro-text {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #b3b3b3;
+    width: 100%;
+  }
+
+  .home-content-buttons {
+    margin-top: 4vh;
+    width: 100%;
+    height: 5vh;
+  }
+
+  .home-buttons-label {
+    color: #0f0f0f;
+  }
+
+  .home-content-buttons button {
+    width: 19vh;
+    height: 100%;
+    color: #121212;
+    font-size: 16px;
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .home-content-buttons .btn2 {
+    background-color: transparent;
+    border: 2px solid #3593ff;
+    color: #1a1a1a;
+    background-color: #3593ff;
+    transition: opacity all ease 0.6s;
+  }
+
+  .home-content-buttons .btn2:hover {
+    opacity: 0.6;
+  }
+  /*animated arrow*/
+  /*homepage end*/
+
+  /*about section*/
+
+  #about {
+    padding: 40px;
+    background: #000000d8;
+    width: 100%;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .about-container {
+    margin-top: 7vh;
+    max-height: 100%;
+    width: 100%;
+    border-radius: 12px;
+    color: #b3b3b3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+  }
+
+  .about-image-section {
+    max-height: 100%;
+    width: 40%;
+    background: url("abt-hero.jpg") no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 12px;
+    transition: 0.6s ease;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    overflow: hidden;
+    padding: 20px;
+    cursor: pointer;
+    background-color: green;
+  }
+
+  .about-image-section:hover .about-socials {
+    margin-left: 0%;
+  }
+
+  .about-socials {
+    background: rgba(255, 255, 255, 0.678);
+    backdrop-filter: blur(5);
+    height: 180px;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    border-radius: 30px;
+    margin-left: -100%;
+    transition: 0.6s;
+  }
+
+  .abt-soc-ion a {
+    height: 40px;
+    width: 40px;
+    background: rgb(48, 48, 48);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.5s;
+  }
+
+  .abt-soc-ion a:hover {
+    transform: scale(1.1);
+  }
+
+  .abt-soc-ion a:active {
+    opacity: 0.6;
+  }
+
+  .abt-soc-ion ion-icon {
+    font-size: 28px;
+    color: white;
+  }
+
+  .about-text-section {
+    width: 57%;
+    height: 100%;
+  }
+
+  .about-heading {
+    font-size: 58px;
+    font-weight: 600;
+    width: 100%;
+    color: #3593ff;
+  }
+
+  .about-subheading {
+    width: 100%;
+    height: max-content;
+    padding-bottom: 10px;
+    font-size: 12px;
+    color: rgb(236, 236, 236);
+  }
+  /*About-tab-portion*/
+  .about-tabs {
+    height: 29vh;
+    width: 100%;
+  }
+
+  .about-tab-titles {
+    font-size: 14px;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+  }
+
+  .tabtitle {
+    padding: 3px 0;
+    position: relative;
+    cursor: pointer;
+    transition: 0.4s;
+    z-index: 2;
+  }
+
+  .tabtitle::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #3593ff;
+    transition: 0.4s;
+  }
+
+  .tabtitle.default-active-tab-title::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 90%;
+    height: 2px;
+    background-color: #3593ff;
+    transition: 0.4s;
+  }
+
+  .tabtitle.default-active-tab-title {
+    color: #3593ff;
+  }
+
+  .tabtitle:hover::before {
+    width: 90%;
+    color: #3593ff;
+  }
+
+  .tabtitle:hover {
+    color: #3593ff;
+  }
+
+  .about-tab-content {
+    width: 100%;
+    height: 240px;
+
+    display: flex;
+  }
+  .skills-tab-content,
+  .experience-tab-content,
+  .education-tab-content {
+    display: none; /* Hide all tab contents by default */
+  }
+
+  .skills-tab-content.active-tab-content {
+    display: flex; /* Display only the active tab content */
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    padding-top: 20px;
+  }
+
+  .skill-bar-all {
+    width: 100%;
+    height: 40px;
+    display: flex;
+  }
+
+  .skill-container-all {
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+  }
+
+  .tool-icon1 {
+    background: url("illustrator.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tool-icon2 {
+    background: url("photoshop.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tool-icon3 {
+    background: url("figma.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+
+  .tool-icon4 {
+    background: url("indesign.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 40px;
+    height: 40px;
+  }
+
+  .skill-bar-heading {
+    height: max-content;
+    width: 100%;
+    font-size: 12px;
+  }
+
+  .skill-bar-container {
+    background-color: #383838;
+    border-radius: 5px;
+    height: 4px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+
+  .skill1 {
+    height: 100%;
+    width: 65%;
+    background-color: rgb(255, 182, 24);
+    border-radius: 5px;
+    animation: skillProgress 2s ease forwards; /* Apply animation */
+  }
+
+  @keyframes skillProgress {
+    from {
+      width: 0%;
+    } /* Start from 0% width */
+    to {
+      width: 65%;
+    } /* End at 65% width (change according to your desired percentage) */
+  }
+
+  .skill2 {
+    height: 100%;
+    width: 40%;
+    background-color: rgb(24, 97, 255);
+    border-radius: 5px;
+    animation: skillProgress2 2s ease forwards; /* Apply animation */
+  }
+
+  @keyframes skillProgress2 {
+    from {
+      width: 0%;
+    } /* Start from 0% width */
+    to {
+      width: 40%;
+    } /* End at 65% width (change according to your desired percentage) */
+  }
+
+  .skill3 {
+    height: 100%;
+    width: 56%;
+    background-color: rgb(236, 24, 255);
+    border-radius: 5px;
+    animation: skillProgress3 2s ease forwards; /* Apply animation */
+  }
+
+  @keyframes skillProgress3 {
+    from {
+      width: 0%;
+    } /* Start from 0% width */
+    to {
+      width: 56%;
+    } /* End at 65% width (change according to your desired percentage) */
+  }
+
+  .skill4 {
+    height: 100%;
+    width: 75%;
+    background-color: rgb(255, 24, 82);
+    border-radius: 5px;
+    animation: skillProgress4 2s ease forwards; /* Apply animation */
+  }
+
+  @keyframes skillProgress4 {
+    from {
+      width: 0%;
+    } /* Start from 0% width */
+    to {
+      width: 75%;
+    } /* End at 65% width (change according to your desired percentage) */
+  }
+
+  .percentage {
+    margin-left: 10px;
+    border-radius: 3px;
+    padding: 3px 5px;
+    font-size: 12px;
+    background-color: rgb(27, 27, 27);
+  }
+
+  .experience-tab-content.active-tab-content {
+    display: flex; /* Display only the active tab content */
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    background-color: rgb(102, 255, 0);
+  }
+
+  .education-tab-content.active-tab-content {
+    display: flex; /* Display only the active tab content */
+    height: 100%;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+
+    gap: 20px;
+  }
+
+  .school-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    width: 170px;
+    height: 210px;
+    font-size: 12px;
+  }
+
+  .logo-img {
+    background: url("cnhs_logo-01.png") no-repeat;
+    background-color: rgb(245, 245, 245);
+    border-radius: 14px;
+    background-position: center;
+    background-size: cover;
+    height: 110px;
+    width: 110px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .logo-hover {
+    background: linear-gradient(to bottom, #87ceeb, #1e90ff);
+
+    border-radius: 14px;
+
+    height: 0;
+    width: 110px;
+    position: absolute;
+    display: flex;
+    transition: 0.6s;
+  }
+
+  .logo-img:hover {
+    transform: scale(1.1);
+  }
+
+  .schl-heading {
+    padding-top: 10px;
+    color: #3593ff;
+    font-size: 14px;
+  }
+
+  .schl-subheading {
+    font-style: italic;
+  }
+
+  .jrmsu-logo-container {
+    background: url("jrmsuk_logo-01.png") no-repeat;
+    background-color: rgb(245, 245, 245);
+    border-radius: 14px;
+    background-position: center;
+    background-size: cover;
+    height: 110px;
+    width: 110px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.5s;
+    cursor: pointer;
+  }
+
+  .logo-img,
+  .jrmsu-logo-container {
+    transition: transform 0.5s, opacity 0.5s; /* Add transition for smoother animation */
+  }
+
+  .logo-img:hover,
+  .jrmsu-logo-container:hover {
+    transform: scale(1.1); /* Scale up the size on hover */
+    opacity: 0.9; /* Reduce opacity on hover */
+  }
+
+  /*end-of-about-tab-portion*/
+
+  /*about section end*/
+
+  /*services section*/
+
+  #services {
+    padding: 40px;
+    padding-top: 80px;
+    background: #000000d8;
+    width: 100%;
+    max-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services-container {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 12px;
+    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .services-heading {
+    width: 100%;
+    max-height: 24vh;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 58px;
+    font-weight: 600;
+    justify-content: center;
+    color: #3593ff;
+  }
+
+  .services-content {
+    width: 100%;
+    max-height: 60%;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  .services-card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .services-cards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 0 0 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 24%;
+    background-color: rgb(26, 26, 26);
+    overflow: hidden;
+  }
+
+  .services-card-up {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(26, 26, 26);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding: 10px;
+  }
+
+  .services-icon-container {
+    background: none;
+    width: 40%;
+    height: 70%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+  }
+
+  .services-icon-container ion-icon {
+    font-size: 56px;
+    color: #3593ff;
+  }
+
+  .services-card-heading {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #3593ff;
+  }
+
+  .services-card-down {
+    padding: 0 20px 20px 20px;
+    color: #c5c3c3;
+    height: 50%;
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    font-size: 13px;
+  }
+
+  /*services end*/
+  /*portfolio*/
+
+  #portfolio {
+    padding: 40px;
+    padding-top: 80px;
+    background: #000000d8;
+    width: 100%;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .portfolio-container {
+    height: 100%;
+    width: 100%;
+
+    border-radius: 12px;
+    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .portfolio-heading {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 58px;
+    font-weight: 600;
+    justify-content: center;
+    color: #3593ff;
+  }
+
+  .portfolio-content {
+    width: 100%;
+    max-height: 80%;
+
+    padding: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .portfolio-card-container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    flex-direction: column;
+  }
+
+  .portfolio-row {
+    height: 48.5%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .portfolio-cards {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    padding: 0;
+    border-radius: 10px;
+    height: 100%;
+    width: 24%;
+    background-color: rgb(26, 26, 26);
+    overflow: hidden;
+  }
+
+  .portfolio-image-container {
+    width: 100%;
+    height: 70%;
+    background-color: rgb(221, 221, 221);
+    border-radius: 10px;
+  }
+
+  .portfolio-image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+
+  .portfolio-image-container:hover .container {
+    display: flex;
+  }
+
+  /*------ Settings ------*/
+  .container {
+    --color: #eeeeee;
+    --size: 30px;
+    display: none;
+    justify-content: end;
+    align-items: center;
+    position: relative;
+    top: 25px;
+    right: 14px;
+    cursor: pointer;
+    font-size: var(--size);
+    user-select: none;
+    fill: var(--color);
+    transition: 0.5s;
+  }
+
+  .container .expand {
+    position: absolute;
+    animation: keyframes-fill 0.5s;
+  }
+
+  .container .compress {
+    position: absolute;
+    display: none;
+    animation: keyframes-fill 0.5s;
+  }
+
+  /* ------ On check event ------ */
+  .container input:checked ~ .expand {
+    display: none;
+  }
+
+  .container input:checked ~ .compress {
+    display: block;
+  }
+
+  /* ------ Hide the default checkbox ------ */
+  .container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+
+  /* ------ Animation ------ */
+  @keyframes keyframes-fill {
+    0% {
+      transform: scale(0);
+      opacity: 0;
+    }
+
+    50% {
+      transform: scale(1.2);
+    }
+  }
+
+  .art4 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+  .art8 {
+    background-color: white;
+  }
+  .art8 img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    object-position: center;
+    border-radius: 10px;
+    transition: 0.6s;
+  }
+
+  .portfolio-card-text {
+    height: 30%;
+    width: 100%;
+    padding: 10px;
+  }
+
+  .portfolio-card-text-heading {
+    width: 100%;
+    height: 30%;
+    color: #3593ff;
+    font-size: 18px !important;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    padding-top: 10px;
+    padding-left: 10px;
+  }
+  .portfolio-card-text-sub {
+    width: 100%;
+    height: 70%;
+    color: #dfdfdf;
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  /*portfolio end*/
+  /*contact section*/
+
+  #contact {
+    padding: 5% 5% 0 5%;
+    background: #000000d8;
+    width: 100%;
+    max-height: 70vh;
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: center;
+  }
+
+  .contact-container {
+    height: 90%;
+    width: 100%;
+
+    border-radius: 10px;
+    color: #b3b3b3;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: end;
+  }
+
+  .contact-heading {
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    padding-top: 20px;
+    font-size: 58px;
+    font-weight: 600;
+    justify-content: center;
+    color: #3593ff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(26, 26, 26);
+  }
+
+  .contact-heading ion-icon {
+    color: #3593ff;
+    font-size: 54px;
+    margin-right: 10px;
+  }
+
+  .contact-content {
+    width: 100%;
+    max-height: 90vh;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    background-color: rgb(26, 26, 26);
+    padding: 5vh 5vh 0 5vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-content-left {
+    height: 10%;
+    width: 100%;
+    padding: 4vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 30px;
+  }
+
+  .contact-content-right {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    display: block;
+    height: 100%;
+    width: 100%;
+    max-width: 100%; /* Adjust as needed */
+    margin: 0 auto; /* Center align */
+  }
+
+  .contact-content-right form {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .contact-content-right label {
+    color: #fff;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+
+  .contact-content-right input[type="email"],
+  .contact-content-right textarea {
+    outline: none;
+    width: 100%;
+    padding: 8px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    color: #444444;
+  }
+
+  .contact-content-right textarea {
+    resize: vertical; /* Allow vertical resizing */
+  }
+
+  .contact-content-right button[type="submit"] {
+    margin-top: 10px;
+    width: 100%;
+    padding: 10px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4caf50;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .contact-content-right button[type="submit"]:hover {
+    background-color: #45a049;
+  }
+
+  footer {
+    margin-top: 10px;
+    font-size: 12px;
+    color: rgb(161, 161, 161);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .contact-content-left .h3 {
+    font-size: 13px;
+    color: #cacaca;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5%;
+  }
+
+  .contact-content-left a {
+    text-decoration: none;
+  }
+
+  .contact-content-left a:hover ion-icon {
+    color: #ececec;
+  }
+
+  .contact-content-left a:hover {
+    text-decoration: underline;
+  }
+
+  .contact-content-left ion-icon {
+    color: #3593ff;
+    font-size: 28px;
+    margin-right: 10px;
+    transition: 0.5s;
+  }
+
+  .contact-content-left
+    a:hover
+    .h3
+    .h3
+    ion-icon[name="logo-facebook"]
+    .h3
+    ion-icon[name="logo-instagram"]
+    .h3
+    ion-icon[name="logo-behance"]
+    .h3
+    ion-icon[name="mail-open-outline"] {
+    color: #1769ff;
+  }
+
+  /* Define gradient colors for each icon */
+  .h3 ion-icon[name="logo-facebook"] {
+    color: #3593ff; /* Desired color for Facebook icon */
+  }
+
+  .h3 ion-icon[name="logo-instagram"] {
+    color: #3593ff; /* Desired color for Instagram icon */
+  }
+
+  .h3 ion-icon[name="logo-behance"] {
+    color: #3593ff; /* Desired color for Behance icon */
+  }
+
+  .h3 ion-icon[name="mail-open-outline"] {
+    color: #3593ff; /* Desired color for Mail icon */
+  }
+
+  .contact-content-divider {
+    height: 1px;
+    width: 80%;
+    background: none;
+  }
+
+  /*contact end*/
+}
