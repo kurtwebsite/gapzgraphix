@@ -344,7 +344,6 @@ a[data-tooltip]:hover::after {
   margin-top: 7vh;
   height: 95%;
   width: 100%;
-
   border-radius: 12px;
   color: #b3b3b3;
   display: flex;
@@ -811,7 +810,7 @@ a[data-tooltip]:hover::after {
   border-radius: 10px;
   height: 100%;
   width: 24%;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(26, 26, 26);
   overflow: hidden;
 }
 
@@ -821,7 +820,7 @@ a[data-tooltip]:hover::after {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgb(221, 221, 221);
+  background-color: rgb(26, 26, 26);
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   padding: 10px;
@@ -856,7 +855,7 @@ a[data-tooltip]:hover::after {
 
 .services-card-down {
   padding: 0 20px 20px 20px;
-  color: #313131;
+  color: #c5c3c3;
   height: 50%;
   width: 100%;
 
@@ -1108,7 +1107,7 @@ a[data-tooltip]:hover::after {
   color: #3593ff;
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
-  background-color: #2b2b2b;
+  background-color: rgb(26, 26, 26);
 }
 
 .contact-heading ion-icon {
@@ -1122,7 +1121,7 @@ a[data-tooltip]:hover::after {
   height: 90vh;
   border-top-left-radius: 0;
   border-top-right-radius: 0;
-  background-color: #2b2b2b;
+  background-color: rgb(26, 26, 26);
   padding: 5vh 5vh 0 5vh;
   display: flex;
   align-items: center;
