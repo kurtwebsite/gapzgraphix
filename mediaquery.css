@@ -3017,13 +3017,13 @@
   }
 
   .home-text-content-heading {
-    font-size: 20px !important;
+    font-size: 24px !important;
     font-weight: 600;
     width: 100%;
   }
 
   .home-text-content-subheading {
-    font-size: 16px;
+    font-size: 16px !important;
     width: 100%;
     color: #3593ff;
   }
