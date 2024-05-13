@@ -104,7 +104,7 @@
                 as Adobe Illustrator and Adobe Photoshop. Get in touch with me by sending a message.
               </div>
               <div class="home-content-buttons">
-                <button class="btn2" href="#contact">
+                <button class="btn2" onclick="scrollToContact()">
                   <div class="home-buttons-icon"></div>
                   <div class="home-buttons-label">Contact Me</div>
                 </button>
@@ -122,9 +122,9 @@
           <div class="about-container">
             <div class="about-image-section">
               <div class="about-socials">
-                <div class="abt-soc-ion"><a href=""><ion-icon name="logo-facebook"></ion-icon></a></div>
-                <div class="abt-soc-ion"><a href=""><ion-icon name="logo-instagram"></ion-icon></a></div>
-                <div class="abt-soc-ion"><a href=""><ion-icon name="logo-behance"></ion-icon></a></div>
+                <div class="abt-soc-ion"><a href="https://www.facebook.com/gapzgraphix"><ion-icon name="logo-facebook"></ion-icon></a></div>
+                <div class="abt-soc-ion"><a href="https://www.instagram.com/jcgpl"><ion-icon name="logo-instagram"></ion-icon></a></div>
+                <div class="abt-soc-ion"><a href="https://www.behance.net/jesiegapol"><ion-icon name="logo-behance"></ion-icon></a></div>
 
               </div>
             </div>
@@ -284,6 +284,8 @@
         </div>
       </section>
       <section class="main-section" id="portfolio">
+   
+  
         <div class="portfolio-container">
           <div class="portfolio-heading section-heading">Works I've done</div>
           <div class="portfolio-content">
@@ -291,11 +293,7 @@
               <div class="portfolio-row first-row">
                 <div class="portfolio-cards">
                   <div class="portfolio-image-container art1">
-                    <label class="container">
-                      <input checked="checked" type="checkbox">
-                        <svg viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="expand"><path d="M32 32C14.3 32 0 46.3 0 64v96c0 17.7 14.3 32 32 32s32-14.3 32-32V96h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H32zM64 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H64V352zM320 32c-17.7 0-32 14.3-32 32s14.3 32 32 32h64v64c0 17.7 14.3 32 32 32s32-14.3 32-32V64c0-17.7-14.3-32-32-32H320zM448 352c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H320c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V352z"></path></svg>
-                        <svg viewBox="0 0 448 512" height="1em" xmlns="http://www.w3.org/2000/svg" class="compress"><path d="M160 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v64H32c-17.7 0-32 14.3-32 32s14.3 32 32 32h96c17.7 0 32-14.3 32-32V64zM32 320c-17.7 0-32 14.3-32 32s14.3 32 32 32H96v64c0 17.7 14.3 32 32 32s32-14.3 32-32V352c0-17.7-14.3-32-32-32H32zM352 64c0-17.7-14.3-32-32-32s-32 14.3-32 32v96c0 17.7 14.3 32 32 32h96c17.7 0 32-14.3 32-32s-14.3-32-32-32H352V64zM320 320c-17.7 0-32 14.3-32 32v96c0 17.7 14.3 32 32 32s32-14.3 32-32V384h64c17.7 0 32-14.3 32-32s-14.3-32-32-32H320z"></path></svg>
-                    </label>
+                    <ion-icon title="expand" name="expand-outline" onclick="expandImage('CSS SPORTS FEST TSHIRT DESGN-01.png')"></ion-icon>
                   <img src="CSS SPORTS FEST TSHIRT DESGN-01.png" alt="">
                   </div>
                   <div class="portfolio-card-text">
@@ -303,19 +301,28 @@
                     <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
                   </div>
                 </div>
-                <div class="portfolio-cards">
-                  <div class="portfolio-image-container art2">
+
+                <div class="expanded-image" id="expandedImage">
+                  <ion-icon name="close-outline" title="close" onclick="closeExpandedImage()"></ion-icon>
+                  <img id="expandedImg" src="CSS SPORTS FEST TSHIRT DESGN-01.png" alt="Expanded Image">
+              </div>
+                  <div class="portfolio-cards">
+                    <div class="portfolio-image-container art2">
+                      
+                      <ion-icon title="expand" name="expand-outline" onclick="expandImage('bg-gapol.jpg')"></ion-icon>
+                      <img src="bg-gapol.jpg" alt="">
+                    </div>
+                    <div class="portfolio-card-text">
+                      <div class="portfolio-card-text-heading">Illustration Design</div>
+                      <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
                     
-                    <img src="bg-gapol.jpg" alt="">
+                    </div>
                   </div>
-                  <div class="portfolio-card-text">
-                    <div class="portfolio-card-text-heading">Illustration Design</div>
-                    <div class="portfolio-card-text-sub">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem dolorem a reiciendis aliquam.</div>
-                  
-                  </div>
-                </div>
+                 
                 <div class="portfolio-cards">
                   <div class="portfolio-image-container art3">
+               
+                    <ion-icon title="expand" name="expand-outline" onclick="expandImage('HAYA GAMING LOGO UNFINISHED TEXT 2-01.jpg')"></ion-icon>
                     <img src="HAYA GAMING LOGO UNFINISHED TEXT 2-01.jpg" alt="">
                   </div>
                   <div class="portfolio-card-text">
@@ -326,6 +333,8 @@
                 </div>
                 <div class="portfolio-cards">
                   <div class="portfolio-image-container art4">
+                    <ion-icon title="expand" name="expand-outline" onclick="expandImage('MOVING UP CEREMONY FINAL SUPer 20000 5555-01.png')"></ion-icon>
+                   
                     <img src="MOVING UP CEREMONY FINAL SUPer 20000 5555-01.png" alt="">
                   </div>
                   <div class="portfolio-card-text">
@@ -338,6 +347,7 @@
               <div class="portfolio-row sec-row">
                 <div class="portfolio-cards">
                   <div class="portfolio-image-container art5">
+                    <ion-icon title="expand" name="expand-outline" onclick="expandImage('Project 116_2.png')"></ion-icon>
                     <img src="Project 116_2.png" alt="">
                   </div>
                   <div class="portfolio-card-text">
@@ -347,6 +357,7 @@
                   </div>
                 </div>
                 <div class="portfolio-cards"><div class="portfolio-image-container art6">
+                  <ion-icon title="expand" name="expand-outline" onclick="expandImage('CCS PANTHER MASCOT LOGO EDITABLE FINAL-01.png')"></ion-icon>
                   <img src="CCS PANTHER MASCOT LOGO EDITABLE FINAL-01.png" alt="">
                 </div>
                 <div class="portfolio-card-text">
@@ -356,6 +367,7 @@
                 </div></div>
                 <div class="portfolio-cards">
                   <div class="portfolio-image-container art7">
+                    <ion-icon title="expand" name="expand-outline" onclick="expandImage('Project 1 2 1 1 39_3.png')"></ion-icon>
                     <img src="Project 1 2 1 1 39_3.png" alt="">
                   </div>
                   <div class="portfolio-card-text">
@@ -366,7 +378,8 @@
                 </div>
                 <div class="portfolio-cards">
                   <div class="portfolio-image-container art8">
-                    <img src="BARCELONIA BNW.png" alt="">
+                    <ion-icon title="expand" name="expand-outline" onclick="expandImage('BARCELONIA BNW.png')"></ion-icon>
+                   <img src="BARCELONIA BNW.png" alt="">
                   </div>
                   <div class="portfolio-card-text">
                     <div class="portfolio-card-text-heading">Basketball Jersey Design</div>
@@ -392,18 +405,18 @@
           <div class="contact-content">
             <footer>&copy;Copyright, Gapz Graphics 2024. All Rights Reserved.</footer>
             <div class="contact-content-left">
-              <a href=""><div class="h3">
+              <a href="https://www.facebook.com/gapzgraphix"><div class="h3">
                 <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="16" cy="16" r="14" fill="url(#paint0_linear_87_7208)"></circle> <path d="M21.2137 20.2816L21.8356 16.3301H17.9452V13.767C17.9452 12.6857 18.4877 11.6311 20.2302 11.6311H22V8.26699C22 8.26699 20.3945 8 18.8603 8C15.6548 8 13.5617 9.89294 13.5617 13.3184V16.3301H10V20.2816H13.5617V29.8345C14.2767 29.944 15.0082 30 15.7534 30C16.4986 30 17.2302 29.944 17.9452 29.8345V20.2816H21.2137Z" fill="white"></path> <defs> <linearGradient id="paint0_linear_87_7208" x1="16" y1="2" x2="16" y2="29.917" gradientUnits="userSpaceOnUse"> <stop stop-color="#18ACFE"></stop> <stop offset="1" stop-color="#0163E0"></stop> </linearGradient> </defs> </g></svg>
                 Gapz Graphics</div></a>
-              <a href=""><div class="h3">
+              <a href="https://www.instagram.com/jcgpl"><div class="h3">
                 <svg width="30px" height="30px" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint0_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint1_radial_87_7153)"></rect> <rect x="2" y="2" width="28" height="28" rx="6" fill="url(#paint2_radial_87_7153)"></rect> <path d="M23 10.5C23 11.3284 22.3284 12 21.5 12C20.6716 12 20 11.3284 20 10.5C20 9.67157 20.6716 9 21.5 9C22.3284 9 23 9.67157 23 10.5Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M16 21C18.7614 21 21 18.7614 21 16C21 13.2386 18.7614 11 16 11C13.2386 11 11 13.2386 11 16C11 18.7614 13.2386 21 16 21ZM16 19C17.6569 19 19 17.6569 19 16C19 14.3431 17.6569 13 16 13C14.3431 13 13 14.3431 13 16C13 17.6569 14.3431 19 16 19Z" fill="white"></path> <path fill-rule="evenodd" clip-rule="evenodd" d="M6 15.6C6 12.2397 6 10.5595 6.65396 9.27606C7.2292 8.14708 8.14708 7.2292 9.27606 6.65396C10.5595 6 12.2397 6 15.6 6H16.4C19.7603 6 21.4405 6 22.7239 6.65396C23.8529 7.2292 24.7708 8.14708 25.346 9.27606C26 10.5595 26 12.2397 26 15.6V16.4C26 19.7603 26 21.4405 25.346 22.7239C24.7708 23.8529 23.8529 24.7708 22.7239 25.346C21.4405 26 19.7603 26 16.4 26H15.6C12.2397 26 10.5595 26 9.27606 25.346C8.14708 24.7708 7.2292 23.8529 6.65396 22.7239C6 21.4405 6 19.7603 6 16.4V15.6ZM15.6 8H16.4C18.1132 8 19.2777 8.00156 20.1779 8.0751C21.0548 8.14674 21.5032 8.27659 21.816 8.43597C22.5686 8.81947 23.1805 9.43139 23.564 10.184C23.7234 10.4968 23.8533 10.9452 23.9249 11.8221C23.9984 12.7223 24 13.8868 24 15.6V16.4C24 18.1132 23.9984 19.2777 23.9249 20.1779C23.8533 21.0548 23.7234 21.5032 23.564 21.816C23.1805 22.5686 22.5686 23.1805 21.816 23.564C21.5032 23.7234 21.0548 23.8533 20.1779 23.9249C19.2777 23.9984 18.1132 24 16.4 24H15.6C13.8868 24 12.7223 23.9984 11.8221 23.9249C10.9452 23.8533 10.4968 23.7234 10.184 23.564C9.43139 23.1805 8.81947 22.5686 8.43597 21.816C8.27659 21.5032 8.14674 21.0548 8.0751 20.1779C8.00156 19.2777 8 18.1132 8 16.4V15.6C8 13.8868 8.00156 12.7223 8.0751 11.8221C8.14674 10.9452 8.27659 10.4968 8.43597 10.184C8.81947 9.43139 9.43139 8.81947 10.184 8.43597C10.4968 8.27659 10.9452 8.14674 11.8221 8.0751C12.7223 8.00156 13.8868 8 15.6 8Z" fill="white"></path> <defs> <radialGradient id="paint0_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(12 23) rotate(-55.3758) scale(25.5196)"> <stop stop-color="#B13589"></stop> <stop offset="0.79309" stop-color="#C62F94"></stop> <stop offset="1" stop-color="#8A3AC8"></stop> </radialGradient> <radialGradient id="paint1_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(11 31) rotate(-65.1363) scale(22.5942)"> <stop stop-color="#E0E8B7"></stop> <stop offset="0.444662" stop-color="#FB8A2E"></stop> <stop offset="0.71474" stop-color="#E2425C"></stop> <stop offset="1" stop-color="#E2425C" stop-opacity="0"></stop> </radialGradient> <radialGradient id="paint2_radial_87_7153" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(0.500002 3) rotate(-8.1301) scale(38.8909 8.31836)"> <stop offset="0.156701" stop-color="#406ADC"></stop> <stop offset="0.467799" stop-color="#6A45BE"></stop> <stop offset="1" stop-color="#6A45BE" stop-opacity="0"></stop> </radialGradient> </defs> </g></svg>
                 
                 Gapz Graphics</div></a>
-              <a href=""><div class="h3">
+              <a href="https://www.behance.net/jesiegapol"><div class="h3">
                 <svg width="40px" height="40px" viewBox="-4.8 -4.8 57.60 57.60" fill="none" xmlns="http://www.w3.org/2000/svg"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"> <circle cx="24" cy="24" r="20" fill="#1769FF"></circle> <path d="M18.9811 16C19.6726 16 20.3114 16.0527 20.8976 16.2107C21.4837 16.3161 21.9645 16.5335 22.3926 16.7969C22.8207 17.0603 23.1368 17.4357 23.3541 17.9165C23.5649 18.3973 23.6768 18.9834 23.6768 19.6223C23.6768 20.3665 23.5188 21.0053 23.1434 21.4861C22.8207 21.9668 22.2938 22.3949 21.6484 22.7111C22.5572 22.9745 23.2487 23.4553 23.6702 24.0941C24.0917 24.7329 24.3618 25.5298 24.3618 26.4387C24.3618 27.1829 24.2037 27.8217 23.9337 28.3552C23.6702 28.8886 23.2422 29.3694 22.7614 29.6855C22.2806 30.0083 21.6945 30.2717 21.0556 30.4297C20.4168 30.5878 19.778 30.6932 19.1391 30.6932L12 30.7064V16H18.9811ZM18.553 21.9668C19.1391 21.9668 19.6199 21.8088 19.9887 21.5388C20.3575 21.2687 20.5222 20.7945 20.5222 20.2084C20.5222 19.8857 20.4695 19.5696 20.3641 19.3588C20.2587 19.1481 20.1007 18.9834 19.8833 18.8254C19.6726 18.72 19.4553 18.6146 19.1918 18.5619C18.9284 18.5092 18.6584 18.5092 18.3422 18.5092H15.2534V21.9734C15.2534 21.9668 18.553 21.9668 18.553 21.9668ZM18.7111 28.2564C19.0338 28.2564 19.3499 28.2037 19.6199 28.151C19.8833 28.0983 20.1534 27.993 20.3641 27.8283C20.5749 27.6637 20.7395 27.5056 20.8976 27.2422C21.003 26.9787 21.1083 26.656 21.1083 26.2806C21.1083 25.5364 20.8976 25.003 20.4695 24.6276C20.0414 24.3048 19.4553 24.1468 18.7637 24.1468H15.2534V28.2498H18.7111V28.2564Z" fill="white"></path> <path d="M28.998 28.2036C29.4261 28.6317 30.0649 28.8425 30.9145 28.8425C31.5007 28.8425 32.0341 28.6844 32.4622 28.4144C32.8903 28.0917 33.1537 27.7756 33.2591 27.4528H35.8671C35.4391 28.7305 34.8002 29.6394 33.9506 30.2255C33.1011 30.759 32.0868 31.0751 30.8618 31.0751C30.0123 31.0751 29.2615 30.917 28.5699 30.647C27.8784 30.3836 27.345 30.0082 26.8642 29.4747C26.3834 28.9939 26.0146 28.4078 25.7973 27.7163C25.5338 27.0248 25.4219 26.2805 25.4219 25.4244C25.4219 24.6275 25.5272 23.8767 25.7973 23.1852C26.0673 22.4936 26.4361 21.9075 26.9169 21.374C27.3977 20.8933 27.9838 20.4652 28.6226 20.2017C29.3142 19.9383 30.0057 19.7737 30.8618 19.7737C31.7707 19.7737 32.5676 19.9317 33.2591 20.3071C33.9506 20.6825 34.4841 21.104 34.9122 21.7428C35.3403 22.329 35.6564 23.0205 35.8737 23.7647C35.9791 24.5089 36.0318 25.2597 35.9791 26.1093H28.2538C28.2538 26.9787 28.5699 27.7756 28.998 28.2036ZM32.3568 22.6056C31.9815 22.2302 31.3953 22.0195 30.7038 22.0195C30.223 22.0195 29.8542 22.1248 29.5315 22.2829C29.2088 22.441 28.998 22.6583 28.7873 22.869C28.5765 23.0798 28.4646 23.3498 28.4119 23.6133C28.3592 23.8767 28.3065 24.094 28.3065 24.3048H33.1011C32.9957 23.5145 32.7257 22.981 32.3568 22.6056ZM27.6677 17.0142H33.6345V18.4499H27.6677V17.0142Z" fill="white"></path> </g></svg>
                 
                 Gapz Graphics</div></a>
-              <a href=""><div class="h3">
+              <a href="mailto:jesie.gapol@gmail.com"><div class="h3">
                 <svg width="30px" height="30px" xmlns="http://www.w3.org/2000/svg" aria-label="Gmail" role="img" viewBox="0 0 512 512" width="64px" height="64px" fill="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><rect width="512" height="512" rx="15%" fill="#ffffff"></rect><path d="M158 391v-142l-82-63V361q0 30 30 30" fill="#4285f4"></path><path d="M 154 248l102 77l102-77v-98l-102 77l-102-77" fill="#ea4335"></path><path d="M354 391v-142l82-63V361q0 30-30 30" fill="#34a853"></path><path d="M76 188l82 63v-98l-30-23c-27-21-52 0-52 26" fill="#c5221f"></path><path d="M436 188l-82 63v-98l30-23c27-21 52 0 52 26" fill="#fbbc04"></path></g></svg>
                 Gapz Graphics</div></a>
             </div>
@@ -497,6 +510,30 @@ function loadSkillsOnAboutClick() {
     });
   }
 
+  function scrollToContact() {
+        var contactSection = document.getElementById('contact');
+        contactSection.scrollIntoView({ behavior: 'smooth' });
+    }
+
+    function expandImage(imageSrc) {
+            var expandedImage = document.getElementById("expandedImage");
+            var expandedImg = document.getElementById("expandedImg");
+            expandedImg.src = imageSrc;
+            expandedImage.style.display = "flex";
+        }
+
+        // Close the expanded image when clicking outside of it
+        window.onclick = function (event) {
+            var expandedImage = document.getElementById("expandedImage");
+            if (event.target == expandedImage) {
+                expandedImage.style.display = "none";
+            }
+        }
+
+        function closeExpandedImage() {
+            var expandedImage = document.getElementById("expandedImage");
+            expandedImage.style.display = "none";
+        }
  
   </script>
   
