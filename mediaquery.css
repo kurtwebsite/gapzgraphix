@@ -3087,3 +3087,17 @@
 }
 
 /*mediaquery 375 end*/
+
+@media screen and (max-width: 375px) {
+  .home-text-content-heading {
+    font-size: 18px !important;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .home-text-content-subheading {
+    font-size: 12px !important;
+    width: 100%;
+    color: #3593ff;
+  }
+}
