@@ -887,6 +887,7 @@
   .contact-content-left .h3 {
     font-size: 10px;
     width: 100%;
+    gap: 5px;
   }
 
   .contact-content-left a {
@@ -1935,7 +1936,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 5%;
-
+    gap: 5px;
     width: 100%;
   }
 
