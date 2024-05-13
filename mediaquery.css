@@ -1122,7 +1122,7 @@
   }
 
   .home-text-content-heading {
-    font-size: 38px !important;
+    font-size: 36px !important;
   }
 
   .home-text-content-subheading {
@@ -2009,7 +2009,8 @@
   }
 
   #home {
-    padding-top: 5% !important;
+    padding-top: 15% !important;
+    height: fit-content;
   }
 
   .home-text-content-heading {
@@ -2069,6 +2070,7 @@
     align-items: center;
     padding-bottom: 5%;
     padding: 0;
+    padding-top: 0 !important;
   }
 
   .home-container {
@@ -2926,6 +2928,17 @@
   /*contact end*/
 }
 
+/*media 436*/
+@media screen and (max-width: 436px) {
+  .home-text-content-heading {
+    font-size: 24.5px !important;
+  }
+
+  .home-text-content-subheading {
+    font-size: 20px;
+  }
+}
+
 @media screen and (max-width: 430px) {
   /*header*/
   .main-header {
@@ -3018,7 +3031,7 @@
   }
 
   .home-text-content-heading {
-    font-size: 24px !important;
+    font-size: 23px !important;
     font-weight: 600;
     width: 100%;
   }
