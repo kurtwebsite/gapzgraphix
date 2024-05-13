@@ -1343,6 +1343,9 @@ footer {
 .portfolio-image-container ion-icon:hover {
   color: #1769ff;
 }
+.portfolio-image-container ion-icon:active {
+  color: red;
+}
 
 .portfolio-image-container {
   position: relative;
@@ -1384,8 +1387,13 @@ footer {
   padding: 5px;
   border-radius: 50%;
   z-index: 99999;
+  cursor: pointer;
 }
 
 .expanded-image ion-icon:hover {
   color: #1769ff;
+}
+
+.expanded-image ion-icon:active {
+  color: red;
 }
