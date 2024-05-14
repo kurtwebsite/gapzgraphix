@@ -2728,6 +2728,9 @@
   .first-row {
     display: flex;
   }
+  .sec-row {
+    display: flex;
+  }
 
   .portfolio-cards {
     display: flex;
