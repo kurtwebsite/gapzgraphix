@@ -312,6 +312,9 @@ a[data-tooltip]:hover::after {
 }
 
 .home-text-content-subheading {
+  display: flex;
+  align-items: center;
+  gap: 5px;
   font-size: 22px;
   width: 100%;
   color: #3593ff;
