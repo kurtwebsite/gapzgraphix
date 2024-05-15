@@ -1397,3 +1397,18 @@ footer {
 .expanded-image ion-icon:active {
   color: red;
 }
+
+#myBtn {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: fit-content;
+  height: fit-content;
+  padding: 5px 10px;
+  background-color: rgb(26, 26, 26);
+  border: none;
+  border-radius: 15px;
+
+  transition: 0.4s;
+}
