@@ -345,7 +345,8 @@
                   </div>
                 </div>
               </div>
-              <div class="portfolio-row sec-row">
+             
+              <div class="portfolio-row sec-row" id="more">
                 <div class="portfolio-cards">
                   <div class="portfolio-image-container art5">
                     <ion-icon title="expand" name="expand-outline" onclick="expandImage('Project 116_2.png')"></ion-icon>
@@ -389,6 +390,8 @@
                   </div>
                 </div>
               </div>
+              <button onclick="viewButton()" id="myBtn" style="font-size: 14px;" >View more</button>
+
             </div>
           </div>
             
@@ -537,6 +540,54 @@ function loadSkillsOnAboutClick() {
         }
  
   </script>
+<script>
+ // Function to set the display property of .sec-row based on screen size
+ function setSecRowDisplay() {
+    var secRow = document.querySelector(".sec-row");
+    var screenWidth = window.innerWidth;
+
+    if (screenWidth > 580) {
+      secRow.style.display = "flex";
+    } else {
+      secRow.style.display = "none"; // or any other initial display value
+    }
+  }
+
+  // Call the function on page load to set the initial display
+  window.onload = function() {
+    setSecRowDisplay();
+  };
+
+  // Add an event listener for the resize event to call setSecRowDisplay
+  window.addEventListener('resize', function() {
+    if (window.innerWidth > 580) {
+      setSecRowDisplay();
+    }
+  });
+  // Function to toggle the display of .sec-row when the button is clicked
+  function viewButton() {
+    var button = document.getElementById("myBtn");
+    var secRow = document.querySelector(".sec-row");
+    var secRowDisplayStyle = window.getComputedStyle(secRow).getPropertyValue("display");
+
+    if (secRowDisplayStyle === "none") {
+      // Show the content
+      secRow.style.display = "flex";
+      // Change button text and style
+      button.textContent = "View less";
+      button.style.backgroundColor = "rgb(26, 26, 26)";
+    } else {
+      // Hide the content
+      secRow.style.display = "none";
+      // Change button text and style
+      button.textContent = "View more";
+      button.style.backgroundColor = "#3593ff";
+    }
+  }
+</script>
+
+  
+  
   
   </body>
 </html>
