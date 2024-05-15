@@ -49,6 +49,11 @@ body {
   justify-content: start;
 }
 
+.logo-icon img {
+  width: 37px;
+  height: 37px;
+}
+
 .text-logo {
   width: 200px;
   height: 100%;
