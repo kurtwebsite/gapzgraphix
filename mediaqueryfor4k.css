@@ -1,16 +1,95 @@
-@media screen and (min-width: 1441px) {
+@media screen and (min-width: 1331px) {
+  /*header start*/
+
+  .main-header {
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: fit-content;
+    padding: 3vh 5%;
+    position: fixed;
+    backdrop-filter: blur(7px);
+    background-color: #000000;
+    z-index: 8;
+  }
+
+  .logo-section {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 45px;
+    width: 100%;
+  }
+
+  .logo-icon {
+    width: 54px !important ;
+    height: 54px !important;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+
+  .text-logo {
+    width: fit-content;
+    height: 100%;
+    margin-left: 5px;
+    font-size: 28px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    color: #3593ff;
+  }
+
+  .nav-links ul li a {
+    text-decoration: none;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    width: 45px;
+    margin-left: 18px;
+
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .nav-links ul li i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: fit-content;
+    width: fit-content;
+    margin-left: 18px;
+
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
+  .nav-links ul li i {
+    color: #949494;
+    font-weight: 100;
+    font-size: 30px;
+    border-radius: 50%;
+  }
+
   /*homepage*/
   #home {
     background: url("bg-gapol-transpa-bnw.png") no-repeat;
     background-size: cover;
     background-position: center;
     width: 100%;
-    max-height: 80vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     align-items: center;
+    padding-top: 10vh;
   }
 
   .home-container {
@@ -29,7 +108,7 @@
 
   .home-image-container {
     width: 35%;
-    height: 67%;
+    height: 75%;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -62,17 +141,17 @@
 
   .home-text-container {
     width: 65%;
-    height: 67%;
+    height: 75%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: start;
     text-align: start;
-    padding-right: 8%;
+    padding-right: 0;
   }
 
   .home-text-content-heading {
-    font-size: 48px;
+    font-size: 48px !important;
     font-weight: 600;
     width: 100%;
   }
@@ -113,9 +192,14 @@
   }
 
   .home-text-content-subheading {
-    font-size: 22px;
+    font-size: 26px !important;
     width: 100%;
     color: #3593ff;
+  }
+
+  .home-text-content-subheading svg {
+    width: 30px;
+    height: 30px;
   }
 
   .home-text-content-heading span {
@@ -124,9 +208,10 @@
 
   .home-text-content-intro-text {
     margin-top: 10px;
-    font-size: 14px;
+    font-size: 16px;
     color: #b3b3b3;
     width: 100%;
+    padding-right: 15%;
   }
 
   .home-content-buttons {
@@ -169,7 +254,7 @@
     padding: 40px;
     background: #000000d8;
     width: 100%;
-    max-height: 70vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -592,7 +677,7 @@
     padding-top: 80px;
     background: #000000d8;
     width: 100%;
-    max-height: 80vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -625,8 +710,9 @@
 
   .services-content {
     width: 100%;
-    max-height: 60%;
+    max-height: 100%;
     padding: 40px;
+    padding-bottom: 5%;
     display: flex;
     align-items: center;
   }
@@ -644,7 +730,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 0 0 0 0;
+    padding: 0 0 3% 0;
     border-radius: 10px;
     height: 100%;
     width: 24%;
@@ -711,7 +797,7 @@
     padding-top: 80px;
     background: #000000d8;
     width: 100%;
-
+    height: fit-content;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -914,7 +1000,7 @@
     padding: 5% 5% 0 5%;
     background: #000000d8;
     width: 100%;
-    max-height: 70vh;
+    max-height: 100vh;
     display: flex;
     flex-direction: row;
     align-items: end;
