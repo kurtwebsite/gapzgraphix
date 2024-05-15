@@ -541,29 +541,7 @@ function loadSkillsOnAboutClick() {
  
   </script>
 <script>
- // Function to set the display property of .sec-row based on screen size
- function setSecRowDisplay() {
-    var secRow = document.querySelector(".sec-row");
-    var screenWidth = window.innerWidth;
 
-    if (screenWidth > 580) {
-      secRow.style.display = "flex";
-    } else {
-      secRow.style.display = "none"; // or any other initial display value
-    }
-  }
-
-  // Call the function on page load to set the initial display
-  window.onload = function() {
-    setSecRowDisplay();
-  };
-
-  // Add an event listener for the resize event to call setSecRowDisplay
-  window.addEventListener('resize', function() {
-    if (window.innerWidth > 580) {
-      setSecRowDisplay();
-    }
-  });
   // Function to toggle the display of .sec-row when the button is clicked
   function viewButton() {
     var button = document.getElementById("myBtn");
