@@ -3122,7 +3122,7 @@
   }
 
   footer {
-    font-size: 7px;
+    font-size: 9px;
   }
 }
 
@@ -3139,5 +3139,52 @@
     font-size: 12px !important;
     width: 100%;
     color: #3593ff;
+  }
+
+  .h3 svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .h3 .behance {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer {
+    font-size: 8px;
+  }
+}
+
+@media screen and (max-width: 270px) {
+  .text-logo {
+    font-size: 16px;
+
+    color: #3593ff;
+  }
+  .home-text-content-heading {
+    font-size: 16px !important;
+    font-weight: 600;
+    width: 100%;
+  }
+
+  .home-text-content-subheading {
+    font-size: 9px !important;
+    width: 100%;
+    color: #3593ff;
+  }
+
+  .h3 svg {
+    width: 20px;
+    height: 20px;
+  }
+
+  .h3 .behance {
+    width: 30px;
+    height: 30px;
+  }
+
+  footer {
+    font-size: 8px;
   }
 }
